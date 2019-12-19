@@ -1,5 +1,8 @@
 pipeline {
-    
+    agent {
+       echo "agent"
+    }
+	
     environment {
         CI = 'true'
     }
