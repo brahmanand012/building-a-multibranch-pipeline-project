@@ -20,7 +20,6 @@ pipeline {
                 branch 'development'
             }
             steps {
-                merge master
 				checkout master
 				merge development
 
