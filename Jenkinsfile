@@ -20,7 +20,7 @@ pipeline {
                 branch 'development'
             }
             steps {
-                git merge master
+                merge master
 
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 branch 'production'
             }
             steps {
-                git merge master
+                merge master
 
             }
         }
