@@ -15,12 +15,14 @@ pipeline {
                 echo "test"
             }
         }
-        stage('Deliver for development') {
+        stage('Deliver for developmentNew') {
             when {
                 branch 'development'
             }
             steps {
                 merge master
+				checkout master
+				merge development
 
             }
         }
